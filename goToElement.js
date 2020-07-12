@@ -1,15 +1,21 @@
 window.onload=function(){
     //var test = document.getElementById('test');
 
-    test.onclick=()=>{
-        var target = test.getAttribute("data-gte-target");
-        var offset = test.getAttribute("data-gte-offset");
+    var AllElements=document.getElementsByTagName("*");
 
-        var element=document.getElementById(target);
-
-        window.scrollTo({
-            top:element.offsetTop,
-            behavior:"smooth"
-        });
-    }
+    for (let index = 0; index < AllElements.length; index++) {
+        const e = AllElements[index];
+        e.onclick=()=>{
+            var target = e.getAttribute("data-gte-target");
+            var offset = e.getAttribute("data-gte-offset");
+            if(target){
+                var ThisElement=document.getElementById(target);
+        
+                window.scrollTo({
+                    top:ThisElement.offsetTop-offset,
+                    behavior:"smooth"
+                });
+            }
+        }        
+    } 
 };

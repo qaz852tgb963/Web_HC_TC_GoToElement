@@ -1,7 +1,7 @@
 # Web_HC_TC_GoToElement
 赫綵台中 前往指定元素
 
-1.CND
+1.CDN
 ˋˋˋ
 <script scr="https://qaz852tgb963.github.io/Web_HC_TC_GoToElement/goToElement.js"></script>
 ˋˋˋ

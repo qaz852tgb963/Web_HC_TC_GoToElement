@@ -2,7 +2,6 @@
 赫綵台中 前往指定元素
 
 1. CDN
-
 ```
 <script scr="https://qaz852tgb963.github.io/Web_HC_TC_GoToElement/goToElement.js"></script>
 ```
